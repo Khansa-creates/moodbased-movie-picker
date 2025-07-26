@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Movie Picker</title>
+    <link rel="stylesheet" href="movie-picker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood-Based Movie Picker</h1>
+        
+        <div class="mood-selector">
+            <h2>How are you feeling?</h2>
+            <div class="mood-buttons">
+                <button class="mood-btn" data-mood="happy">😊 Happy</button>
+                <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                <button class="mood-btn" data-mood="excited">🤩 Excited</button>
+                <button class="mood-btn" data-mood="romantic">💕 Romantic</button>
+                <button class="mood-btn" data-mood="scared">😱 Scared</button>
+                <button class="mood-btn" data-mood="thoughtful">🤔 Thoughtful</button>
+            </div>
+        </div>
+        
+        <div class="movie-display">
+            <div id="movieTitle" class="movie-title">Pick your mood first!</div>
+            <div id="movieDetails" class="movie-details">Select how you're feeling to get a perfect movie match!</div>
+        </div>
+        
+        <button id="pickMovie" class="pick-button" disabled>Pick Movie</button>
+    </div>
+    <script src="movie-picker.js"></script>
+</body>
+</html>
